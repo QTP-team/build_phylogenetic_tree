@@ -1,6 +1,7 @@
 # build_phylogenetic_tree
 ## 1 Introduction
 
+Use phylophlan to build a phylogenetic tree and then visualize it using graphlan.
 
 ## 2 Usage
 ### 2.1 Use conda to install related dependencies
