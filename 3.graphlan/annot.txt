@@ -17,8 +17,14 @@ Proteobacteria	annotation	Proteobacteria
 Proteobacteria	clade_marker_color	#F5A962
 Proteobacteria	clade_marker_size	1
 OTU_1	clade_marker_color	#125D98
-OTU_1	clade_marker_size	1
+OTU_1	clade_marker_size	10
+OTU_1	annotation_background_color	#125D98
+OTU_1	annotation_background_alpha	0.1
 OTU_2	clade_marker_color	#B6C867
-OTU_2	clade_marker_size	1
+OTU_2	clade_marker_size	10
+OTU_2	annotation_background_color	#B6C867
+OTU_2	annotation_background_alpha	0.1
 OTU_3	clade_marker_color	#F5A962
-OTU_3	clade_marker_size	1
+OTU_3	clade_marker_size	10
+OTU_3	annotation_background_color	#F5A962
+OTU_3	annotation_background_alpha	0.1

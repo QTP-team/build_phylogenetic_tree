@@ -52,7 +52,9 @@ for node in nodes_dict.keys():
         pass
     else:
         phylum = "Others"
-    nstr_node="%s\tclade_marker_color\t%s\n%s\tclade_marker_size\t1\n" %(nodes_dict[node], node_color[phylum], nodes_dict[node])
+    nstr_node="%s\tclade_marker_color\t%s\n%s\tclade_marker_size\t10\n" %(nodes_dict[node], node_color[phylum], nodes_dict[node])
+    nstr_node += "%s\tannotation_background_color\t%s\n" %(nodes_dict[node], node_color[phylum])
+    nstr_node += "%s\tannotation_background_alpha\t0.1\n" %(nodes_dict[node])
     f_o.write(nstr_node)
     
 f_o.close()
