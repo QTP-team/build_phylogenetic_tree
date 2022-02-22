@@ -51,6 +51,6 @@ phylophlan -i 1.protein \
 ### 2.6 graphlan
 ```
 python graphlan.py
-/ldfssz1/ST_META/P19Z10200N0314_LXP/2.feng_project/graphlan/graphlan/graphlan_annotate.py --annot annot.txt all_sgb_18607.tree all_sgb_18607.xml
-/ldfssz1/ST_META/P19Z10200N0314_LXP/2.feng_project/graphlan/graphlan/graphlan.py --dpi 360 --size 3.5 all_sgb_18607.xml all_sgb_18607.pdf
+/ldfssz1/ST_META/P19Z10200N0314_LXP/2.feng_project/graphlan/graphlan/graphlan_annotate.py --annot annot.txt test.tree test.xml
+/ldfssz1/ST_META/P19Z10200N0314_LXP/2.feng_project/graphlan/graphlan/graphlan.py --dpi 360 --size 3.5 test.xml test.pdf
 ```
