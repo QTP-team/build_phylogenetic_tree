@@ -10,14 +10,18 @@ conda env create -n build_phylogenetic_tree -f env.yaml
 conda activate build_phylogenetic_tree
 ```
 
-### 2.2 Gtdbtk
+### 2.2 gtdbtk
+Large memory(~1T) is required when using gtdbtk.
 ```
-gtdbtk classify_wf --genome_dir 0.genome --out_dir gtdbtk/result --cpus 8 --extension fa
+gtdbtk classify_wf --genome_dir 0.genome --out_dir gtdbtk/result --cpus 4 --extension gz
 ```
 
-### 2.3 Integrated protein file
+### 2.3 Integrated protein file and classify file
 ```
-cp result/identify/intermediate_results/marker_genes/*/*.faa 1.protein
+cp gtdbtk/result/identify/intermediate_results/marker_genes/*/*.faa 1.protein
+awk '{print $1"\t"$2}' gtdbtk/result/gtdbtk.ar122.summary.tsv | sed '1d' > gtdbtk.ar122.summary.tsv
+awk '{print $1"\t"$2}' gtdbtk/result/gtdbtk.bac120.summary.tsv | sed '1d' > gtdbtk.bac120.summary.tsv
+cat gtdbtk.ar122.summary.tsv gtdbtk.bac120.summary.tsv > taxo.txt
 ```
 
 ### 2.4 Generate the configuration file custom_config_nt.cfg

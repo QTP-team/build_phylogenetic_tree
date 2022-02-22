@@ -1,0 +1,24 @@
+total_plotted_degrees	335
+start_rotation	90
+class_legend_font_size	5
+annotation_legend_font_size	5
+clade_separation	0.5
+clade_marker_shape	.
+clade_marker_size	0
+branch_thickness	0.2
+clade_marker_edge_width	0
+Thermoproteota	annotation	Thermoproteota
+Thermoproteota	clade_marker_color	#125D98
+Thermoproteota	clade_marker_size	1
+Hydrothermarchaeota	annotation	Hydrothermarchaeota
+Hydrothermarchaeota	clade_marker_color	#B6C867
+Hydrothermarchaeota	clade_marker_size	1
+Proteobacteria	annotation	Proteobacteria
+Proteobacteria	clade_marker_color	#F5A962
+Proteobacteria	clade_marker_size	1
+OTU_1	clade_marker_color	#125D98
+OTU_1	clade_marker_size	1
+OTU_2	clade_marker_color	#B6C867
+OTU_2	clade_marker_size	1
+OTU_3	clade_marker_color	#F5A962
+OTU_3	clade_marker_size	1
