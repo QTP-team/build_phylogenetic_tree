@@ -20,7 +20,7 @@ gtdbtk classify_wf --genome_dir 0.genome --out_dir 1.gtdbtk/result --cpus 4 --ex
 ```
 cp 1.gtdbtk/result/identify/intermediate_results/marker_genes/*/*.faa 2.phylophlan/01.protein
 awk '{print $1"\t"$2}' 1.gtdbtk/result/gtdbtk.ar122.summary.tsv | sed '1d' > 3.graphlan/gtdbtk.ar122.summary.tsv
-awk '{print $1"\t"$2}' gtdbtk/result/gtdbtk.bac120.summary.tsv | sed '1d' > 3.graphlan/gtdbtk.bac120.summary.tsv
+awk '{print $1"\t"$2}' 1.gtdbtk/result/gtdbtk.bac120.summary.tsv | sed '1d' > 3.graphlan/gtdbtk.bac120.summary.tsv
 cat 3.graphlan/gtdbtk.ar122.summary.tsv 3.graphlan/gtdbtk.bac120.summary.tsv > 3.graphlan/taxo.txt
 ```
 
@@ -39,13 +39,13 @@ python phylophlan_write_config_file.py \
 ### 2.5 phylophlan
 ```
 phylophlan -i 2.phylophlan/01.protein \
--d phylophlan \
--f 2.phylophlan/custom_config_nt.cfg \
---diversity high \
---fast \
--o 2.phylophlan/output \
---nproc 4 \
---verbose 2>&1 | tee 2.phylophlan/logs/phylophlan.log
+	-d phylophlan \
+	-f 2.phylophlan/custom_config_nt.cfg \
+	--diversity high \
+	--fast \
+	-o 2.phylophlan/output \
+	--nproc 4 \
+	--verbose 2>&1 | tee 2.phylophlan/logs/phylophlan.log
 ```
 
 ### 2.6 graphlan
